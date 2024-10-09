@@ -2,7 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
-const dashboard = () => {
+const Dashboard = () => {
   const { data: session } = useSession()
   if(!session){
     const router=useRouter();
@@ -15,4 +15,4 @@ const dashboard = () => {
   )
 }
 
-export default dashboard
+export default Dashboard
